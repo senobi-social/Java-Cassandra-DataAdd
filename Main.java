@@ -45,7 +45,9 @@ public class Main {
 		} finally {
 
 			if (cluster != null) {
-        cluster.close();
+
+				// 接続の切断
+				cluster.close();
 
 			}
 		}
